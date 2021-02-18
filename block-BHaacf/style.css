@@ -111,7 +111,10 @@ body {
 /*      header     */
 .header {
     padding: 10px;
-    max-width: 100%;      
+    width: 100%;     
+    position: absolute;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.5);
 }
 h1 {
     font-size: 25px;
@@ -139,33 +142,42 @@ h1 em{
     background-color: #ED563A;
 }
 /* background-video  */
-/*video {/*
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0;  
-    <video  autoplay muted loop src="assets/gym-video.mp"></video>  /*
-}*/
-/*   one      */
-.one {
-    height: 60vh;
+#myVideo {
+    position:relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150vh;
+    z-index: -2;
     
 }
+/*   one      */
+.one {
+    height: 80vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.content {
+    position:absolute;
+    bottom: 360px;
+    right: 100px;    
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 .ch-center {    
     text-align: center;        
 }
 .one p{
-    font-size: 13px;
+    font-size: 15px;
     color: white;
 }
 .one h2{
-    font-size: 34px;
+    font-size: 50px;
     word-spacing: 10px;
     color: white;
     font-weight: 900;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 .one h2 em{
     color:#ED563A ;
